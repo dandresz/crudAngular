@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CrudComponent } from './crud/crud.component'; // Asegúrate de que el componente CRUD esté importado
+import { CrudComponent } from './crud/crud.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/crud', pathMatch: 'full' }, // Redirige a CRUD por defecto
-  { path: 'crud', component: CrudComponent }, // Ruta al componente CRUD
-  
+  { path: '', redirectTo: '/crud', pathMatch: 'full' }, // Redirige a CrudComponent
+  { path: 'crud', component: CrudComponent },
+  // otras rutas...
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })], // Habilitar hash puede ayudar
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
