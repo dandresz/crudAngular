@@ -14,7 +14,6 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/crud-app",
-            "baseHref": "https://dandresz.github.io/crud-app/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -32,6 +31,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/crud-app/",
               "budgets": [
                 {
                   "type": "initial",
