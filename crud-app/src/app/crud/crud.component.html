@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>CRUD Example</h2>
+    <form (ngSubmit)="addItem()">
+      <input type="text" [(ngModel)]="currentItem.name" name="name" placeholder="Enter name" required>
+      <button type="submit">{{ editing ? 'Update' : 'Add' }}</button>
+    </form>
+  
+    <h3>Items List</h3>
+    <ul>
+      <li *ngFor="let item of items">
+        {{ item.name }}
+        <button (click)="editItem(item)">Edit</button>
+        <button (click)="deleteItem(item.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  
