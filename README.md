@@ -1,1 +1,1 @@
-Ingresa a este link para visualizar el programa: https://dandresz.github.io/crudAngular/crud-app/crud
+Ingresa a este link para visualizar el programa. Cargarlo dos veces para que se inicie: https://dandresz.github.io/crudAngular
